@@ -21,6 +21,17 @@
         </style>
     </head>
     <body class="antialiased">
+    <div id="app">
+    <v-app>
+        <header>
+            <v-app-bar
+                app
+                dark
+            >
+                <v-toolbar-title>MyPortfolioSite</v-toolbar-title>
+            </v-app-bar>
+            </header>
+    </v-app>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -128,5 +139,7 @@
                 </div>
             </div>
         </div>
+        </div>
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
